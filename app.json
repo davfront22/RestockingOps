@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "GoVending FieldsOps",
+    "slug": "govending-fieldops",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "com.gopass.govending",
+    "splash": {
+      "image": "./src/assets/splashscreen.png",
+      "backgroundColor": "#181a21",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gopass.govending",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow $(PRODUCT_NAME) to save photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#181a21"
+      },
+      "package": "com.gopass.govending"
+    },
+    "web": {
+      "favicon": "./src/assets/icon.png"
+    },
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyB9e6q9_rAli0tY2ygHCWfgVhJpv4m4Lm0"
+      }
+    },
+    "permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.ACCESS_MEDIA_LOCATION"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5a98f4be-2ba0-48a7-b610-26286e28b929"
+      }
+    },
+    "owner": "gopass"
+  }
+}
